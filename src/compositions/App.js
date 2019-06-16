@@ -2,11 +2,17 @@ import { hot } from 'react-hot-loader/root';
 import React from 'react';
 import styled from 'styled-components';
 
+import GlobalStyles from '../baseStyles';
+
 const Container = styled.div`
-  background: #eee;
-  color: blue;
+  color: #fff;
 `;
 
-const App = () => <Container>hello from App!</Container>;
+const App = () => (
+  <>
+    <GlobalStyles />
+    <Container>hello from App!!</Container>
+  </>
+);
 
 export default hot(App);
