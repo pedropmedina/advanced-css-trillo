@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import HotelView from './HotelView';
+import HotelView from './MainView';
 
 const Main = styled.main``;
 

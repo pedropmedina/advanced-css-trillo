@@ -26,3 +26,5 @@ const App = () => (
 );
 
 export default hot(App);
+
+// https://tech.decisiv.com/structuring-our-styled-components-part-i-2bf21fa64b28

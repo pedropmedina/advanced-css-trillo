@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-const HotelView = styled.main`
+const MainView = styled.main`
   background-color: #fff;
   flex: 1;
 `;
 
-export default HotelView;
+export default MainView;
