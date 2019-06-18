@@ -6,7 +6,7 @@ const Header = styled.header`
   font-size: 1.4rem;
   height: 7rem;
   background-color: #fff;
-  border-bottom: var(--color-grey-light);
+  border-bottom: 1px solid var(--color-grey-light-1);
   display: flex;
   justify-content: space-between;
   align-items: center;

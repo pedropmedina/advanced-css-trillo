@@ -1,5 +1,8 @@
 import React from 'react';
 
+// components
+import HotelOverview from './HotelOverview';
+
 // blocks and elements
 import Main from '../elements/Main';
 import Gallery from '../blocks/Gallery';
@@ -24,6 +27,7 @@ const HotelInfo = () => (
         </Gallery.Figure>
       ))}
     </Gallery>
+    <HotelOverview />
   </Main.HotelView>
 );
 
