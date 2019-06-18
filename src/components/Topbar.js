@@ -8,7 +8,7 @@ import UserNav from '../blocks/UserNav';
 // assets
 import userPic from '../img/user.jpg';
 import logo from '../img/logo.png';
-import svgIconsSprite from '../img/sprite.svg';
+import svgIcons from '../img/sprite.svg';
 
 const USER_NAV_DATA = [
   { icon: '#icon-bookmark', count: 7 },
@@ -23,7 +23,7 @@ const Topbar = () => (
       <Search.Input placeholder="search hotels" />
       <Search.Button>
         <Search.Icon>
-          <use href={`${svgIconsSprite}#icon-magnifying-glass`}></use>
+          <use href={`${svgIcons}#icon-magnifying-glass`}></use>
         </Search.Icon>
       </Search.Button>
     </Search>
@@ -32,7 +32,7 @@ const Topbar = () => (
         return 'icon' in each ? (
           <UserNav.Box key={i}>
             <UserNav.Icon>
-              <use href={`${svgIconsSprite}${each.icon}`}></use>
+              <use href={svgIcons + each.icon}></use>
             </UserNav.Icon>
             <UserNav.Notification>{each.count}</UserNav.Notification>
           </UserNav.Box>
