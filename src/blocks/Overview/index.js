@@ -11,7 +11,7 @@ import Icon from './Icon';
 const Overview = styled.div`
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--color-grey-light-2);
+  border-bottom: var(--line);
 `;
 
 Overview.Heading = Heading;

@@ -2,6 +2,7 @@ import React from 'react';
 
 // components
 import HotelOverview from './HotelOverview';
+import HotelDetail from './HotelDetail';
 
 // blocks and elements
 import Main from '../elements/Main';
@@ -28,6 +29,7 @@ const HotelInfo = () => (
       ))}
     </Gallery>
     <HotelOverview />
+    <HotelDetail />
   </Main.HotelView>
 );
 
