@@ -1,6 +1,20 @@
 import styled, { css } from 'styled-components';
 
-const Item = styled.li`
+export const Nav = styled.nav`
+  background-color: var(--color-grey-dark-1);
+  flex: 0 0 18%;
+  display: flex;
+  flex-direction: column;
+  font-size: 3.5rem;
+`;
+
+export const List = styled.ul`
+  font-size: 1.4rem;
+  list-style: none;
+  margin-top: 3.5rem;
+`;
+
+export const Item = styled.li`
   position: relative;
   cursor: pointer;
 
@@ -41,4 +55,21 @@ const Item = styled.li`
     `}
 `;
 
-export default Item;
+export const Link = styled.a`
+  color: var(--color-grey-light-1);
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  padding: 1.5rem 3rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+`;
+
+export const Icon = styled.svg`
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-right: 2rem;
+  fill: currentColor;
+`;

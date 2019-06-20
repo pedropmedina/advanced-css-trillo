@@ -17,7 +17,7 @@ const pulsate = keyframes`
   }
 `;
 
-const Infinite = styled.button`
+export const InfiniteBtn = styled.button`
   border: none;
   color: var(--color-primary);
   font-size: inherit;
@@ -37,5 +37,3 @@ const Infinite = styled.button`
     animation: ${pulsate} 1s infinite;
   }
 `;
-
-export default Infinite;

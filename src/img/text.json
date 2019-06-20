@@ -14,7 +14,15 @@
     "Perfect for families"
   ],
   "reviews": [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex.",
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi."
+    {
+      "name": "Nick Cave",
+      "date": "Feb 23rd, 2019",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex."
+    },
+    {
+      "name": "James Doe",
+      "date": "May 3rd, 2019",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi."
+    }
   ]
 }
