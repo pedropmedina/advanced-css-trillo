@@ -4,9 +4,9 @@ import React from 'react';
 import * as Styled from './styled';
 
 // logo and icons
-import logo from '../../img/logo.png';
-import svgicons from '../../img/sprite.svg';
-import userpic from '../../img/user.jpg';
+import logo from '../../assets/logo.png';
+import svgicons from '../../assets/sprite.svg';
+import userpic from '../../assets/user.jpg';
 
 // user navigation data
 const USER_NAV_DATA = [

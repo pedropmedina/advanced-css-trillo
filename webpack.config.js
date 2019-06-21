@@ -56,7 +56,7 @@ module.exports = (env = { mode: 'production', presets: [] }) => {
         }),
         new HTMLPlugin({
           template: './public/index.html',
-          favicon: './src/img/favicon.png'
+          favicon: './src/assets/favicon.png'
         }),
         new CleanPlugin()
       ]

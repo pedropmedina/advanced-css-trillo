@@ -1,7 +1,7 @@
 import React from 'react';
 
 // images and icons
-import svgicons from '../../img/sprite.svg';
+import svgicons from '../../assets/sprite.svg';
 
 // styles
 import * as Styled from './styled';
