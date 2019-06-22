@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 
-const pulsate = keyframes`
+export const pulsate = keyframes`
   0% {
     transform: scale(1);
     box-shadow: none;

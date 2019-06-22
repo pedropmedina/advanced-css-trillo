@@ -4,6 +4,7 @@ import React from 'react';
 import HotelGallery from '../HotelGallery';
 import HotelOverview from '../HotelOverview';
 import HotelDetail from '../HotelDetail';
+import CTA from '../CTA';
 
 // styles
 import * as Styled from './styled';
@@ -16,6 +17,8 @@ const HotelView = () => (
     <HotelOverview />
     {/* Detailed informating including recommendations ans user's reviews */}
     <HotelDetail />
+    {/* Call To Action */}
+    <CTA />
   </Styled.Main>
 );
 
