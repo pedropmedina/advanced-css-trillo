@@ -17,12 +17,14 @@
     {
       "name": "Nick Cave",
       "date": "Feb 23rd, 2019",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex."
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex.",
+      "rating": 7.8
     },
     {
-      "name": "James Doe",
+      "name": "Jane Doe",
       "date": "May 3rd, 2019",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi."
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi.",
+      "rating": 7.8
     }
   ]
 }
