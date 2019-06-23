@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 import chevronThinRight from '../../assets/chevron-thin-right.svg';
 
+import { mediaQueries } from '../../stylesShare';
+
 export const Container = styled.div`
   font-size: 1.4rem;
   background-color: #fff;
@@ -9,6 +11,16 @@ export const Container = styled.div`
   padding: 3rem;
   flex: 0 0 60%;
   margin-right: 4.5rem;
+
+  ${mediaQueries.tabletL`
+    padding: 2rem;
+    margin-right: 3rem;
+  `}
+
+  ${mediaQueries.phoneL`
+    margin-right: 0;
+    margin-bottom: 3rem;
+  `}
 `;
 
 export const List = styled.ul`
@@ -59,7 +71,11 @@ export const RecommendCount = styled.p`
   margin-right: auto;
 `;
 
-export const RecommendPhoto = styled.img`
+export const RecommendFriends = styled.div`
+  display: flex;
+`;
+
+export const FriendPhoto = styled.img`
   box-sizing: content-box;
   height: 4rem;
   width: 4rem;

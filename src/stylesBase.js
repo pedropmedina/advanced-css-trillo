@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
+import { mediaQueries } from './stylesShare';
+
 export const colorPalette = {
   primary: '#eb2f64',
   primaryLight: '#FF3366',
@@ -13,6 +15,7 @@ export const colorPalette = {
   greyDark3: '#999'
 };
 
+// global styles
 export default createGlobalStyle`
   :root {
     --color-primary: #eb2f64;
@@ -35,6 +38,10 @@ export default createGlobalStyle`
   html {
     box-sizing: border-box;
     font-size: 62.5%;
+
+    ${mediaQueries.desktopS`
+      font-size: 50%;
+    `}
   }
 
   *,

@@ -1,5 +1,26 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes, css } from 'styled-components';
 
+// screen sizes
+const screenSizes = {
+  desktopL: 1200,
+  desktopS: 1100,
+  tabletL: 900,
+  tabletS: 700,
+  phoneL: 600,
+  phoneS: 500
+};
+
+// media queries factory object for each screen size
+export const mediaQueries = Object.keys(screenSizes).reduce((queries, size) => {
+  queries[size] = (...args) => css`
+    @media only screen and (max-width: ${screenSizes[size] / 16}em) {
+      ${css(...args)}
+    }
+  `;
+  return queries;
+}, {});
+
+// pulsate animation
 export const pulsate = keyframes`
   0% {
     transform: scale(1);
@@ -17,6 +38,7 @@ export const pulsate = keyframes`
   }
 `;
 
+// Inifinite button component
 export const InfiniteBtn = styled.button`
   border: none;
   color: var(--color-primary);

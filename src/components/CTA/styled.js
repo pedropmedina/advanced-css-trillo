@@ -1,11 +1,15 @@
 import styled from 'styled-components';
 
-// pulsate animation
-import { pulsate } from '../../stylesShare';
+// pulsate animation and media queries
+import { pulsate, mediaQueries } from '../../stylesShare';
 
 export const Container = styled.div`
   padding: 3.5rem 0;
   text-align: center;
+
+  ${mediaQueries.tabletL`
+    padding: 2.5rem 0;
+  `}
 `;
 
 export const Text = styled.h2`

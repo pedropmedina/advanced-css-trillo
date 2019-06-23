@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { mediaQueries } from '../../stylesShare';
+
 export const Container = styled.div`
   display: flex;
   align-items: center;
@@ -12,6 +14,11 @@ export const Heading = styled.h1`
   text-transform: uppercase;
   letter-spacing: 1px;
   padding: 1.5rem 3rem;
+
+  ${mediaQueries.phoneL`
+    font-size: 1.8rem;
+    padding: 1.25rem 2rem;
+  `}
 `;
 
 export const Stars = styled.div`
@@ -42,15 +49,27 @@ export const Rating = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  ${mediaQueries.phoneL`
+    padding: 0 1.5rem;
+  `}
 `;
 
 export const RatingAvg = styled.div`
   font-size: 2.25rem;
   font-weight: 300;
   margin-bottom: -3px;
+
+  ${mediaQueries.phoneL`
+    font-size: 1.8rem;
+  `}
 `;
 
 export const RatingCount = styled.div`
   font-size: 0.8rem;
   text-transform: uppercase;
+
+  ${mediaQueries.phoneL`
+    font-size: 0.5rem;
+  `}
 `;

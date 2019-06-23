@@ -32,11 +32,11 @@ const HotelDetailDescription = ({ descriptions, features }) => (
       <Styled.RecommendCount>
         Lucy and 3 other friends recommend this hotel.
       </Styled.RecommendCount>
-      <div>
+      <Styled.RecommendFriends>
         {FRIENDS_IMGS.map(({ src, alt }, i) => (
-          <Styled.RecommendPhoto key={i} src={src} alt={alt} />
+          <Styled.FriendPhoto key={i} src={src} alt={alt} />
         ))}
-      </div>
+      </Styled.RecommendFriends>
     </Styled.Recommend>
   </Styled.Container>
 );

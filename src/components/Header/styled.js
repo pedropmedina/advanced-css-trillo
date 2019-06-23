@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { mediaQueries } from '../../stylesShare';
+
 export const Header = styled.header`
   font-size: 1.4rem;
   height: 7rem;
@@ -8,6 +10,12 @@ export const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  ${mediaQueries.phoneS`
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 11rem;
+  `}
 `;
 
 export const Logo = styled.img`
@@ -24,6 +32,12 @@ export const Search = styled.form`
   > input:focus + button {
     background-color: var(--color-grey-light-3);
   }
+
+  ${mediaQueries.phoneS`
+    order: 1;
+    flex: 0 0 100%;
+    background-color: var(--color-grey-light-2);
+  `}
 `;
 
 export const SearchButton = styled.button`

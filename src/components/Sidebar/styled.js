@@ -1,5 +1,7 @@
 import styled, { css } from 'styled-components';
 
+import { mediaQueries } from '../../stylesShare';
+
 export const Nav = styled.nav`
   background-color: var(--color-grey-dark-1);
   flex: 0 0 18%;
@@ -12,6 +14,11 @@ export const List = styled.ul`
   font-size: 1.4rem;
   list-style: none;
   margin-top: 3.5rem;
+
+  ${mediaQueries.tabletL`
+    display: flex;
+    margin: 0;
+  `}
 `;
 
 export const Item = styled.li`
@@ -53,6 +60,13 @@ export const Item = styled.li`
         width: 100%;
       }
     `}
+
+  ${mediaQueries.tabletL`
+    flex: 1;
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  `}
 `;
 
 export const Link = styled.a`
@@ -65,6 +79,16 @@ export const Link = styled.a`
   align-items: center;
   position: relative;
   z-index: 10;
+
+  ${mediaQueries.tabletL`
+    justify-content: center;
+    padding: 2rem;
+  `}
+
+  ${mediaQueries.phoneL`
+    flex-direction: column;
+    padding: 1.5rem 0.5rem;
+  `}
 `;
 
 export const Icon = styled.svg`
@@ -72,4 +96,11 @@ export const Icon = styled.svg`
   height: 1.75rem;
   margin-right: 2rem;
   fill: currentColor;
+
+  ${mediaQueries.phoneL`
+    margin-right: 0;
+    margin-bottom: 0.7rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  `}
 `;

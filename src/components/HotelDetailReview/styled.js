@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { mediaQueries } from '../../stylesShare';
+
 export const Container = styled.div`
   flex: 1;
   display: flex;
@@ -14,6 +16,11 @@ export const Review = styled.figure`
   margin-bottom: 3.5rem;
   position: relative;
   overflow: hidden;
+
+  ${mediaQueries.tabletL`
+    padding: 2rem;
+    margin-bottom: 3rem;
+  `}
 
   &::before {
     content: '\u201c';
